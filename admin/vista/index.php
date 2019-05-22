@@ -28,11 +28,9 @@
 		<a href="../../login/login.php">CERRAR SESION</a>
 	</header>
 
-
-	<label> Buscar </label>
-	<input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un Remitente.">
-	<span id="mensajeBusqueda" class="error"></span>
 	
+
+
 
 	<table style="width: 100%" border="1">
 		<tr>

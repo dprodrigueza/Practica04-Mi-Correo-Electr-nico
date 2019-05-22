@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>MENSAJE NUEVO</title>
     <script type="text/javascript" src="../controladores/funcion.js"></script>
-
-
+    
 </head>
 
 <body>
@@ -15,7 +14,7 @@
 
 
         <p>
-            <input type="text" id="labelRemitente" name="labelRemitente" value="<?php echo $_GET['mail']; ?>" hidden> <br />
+            <input type="text" id="labelRemitente" name="labelRemitente" value="<?php echo $_GET['mail']; ?>" hidden> <br/>
             Destinatario (*):
             <input type="text" id="destin" name="destin" placeholder="Ingrese el e-mail destino.." required onblur="validarMail(this)">
             <span id="mensajedestin" class="error"></span>
@@ -35,29 +34,8 @@
         <br>
     </form>
 
-
-    <script type="text/javascript">
-        function objetoAjax() {
-            var xmlhttp = false;
-            try {
-                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-            } catch (e) {
-
-                try {
-                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (E) {
-                    xmlhttp = false;
-                }
-            }
-
-            if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
-                xmlhttp = new XMLHttpRequest();
-            }
-            return xmlhttp;
-        }
-
-        </body>
+</body>
 
 
 
-        </html>
+</html>
