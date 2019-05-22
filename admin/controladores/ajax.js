@@ -15,7 +15,7 @@ function buscarCorreo() {
                 document.getElementById("tablaMail").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../controladores/buscarMail.php?mail=" + referencia + "&destin=" + destino, true);
+        xmlhttp.open("GET", "../controladores/buscarMail.php?mail=" + referencia, true);
         xmlhttp.send();
     }
     return false;

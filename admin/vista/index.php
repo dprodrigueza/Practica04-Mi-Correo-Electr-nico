@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>INDEX ADMIN</title>
+	<script type="text/javascript" src="../controladores/ajax.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,6 @@
 	if (!isset($_SESSION['isLoggedAdmin']) || $_SESSION['isLoggedAdmin'] === FALSE) {
 		header("Location: ../../login/login.php");
 	}
-	echo ('bienvenido ADministrador');
 	?>
 
 	<header>
@@ -28,11 +28,17 @@
 		<a href="../../login/login.php">CERRAR SESION</a>
 	</header>
 
-	
+
+	<form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
+		<label> Buscar </label>
+		<input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un E-Mail.">
+		<input type="text" id="destinoMail" name="destinoMail" value="<?php echo $_GET["mail"]; ?>">
+		<span id="mensajeBusqueda" class="error"></span>
+		<input type="submit" id="btnBuscar" name="btnBuscar" value="BUSCAR">
+	</form>
 
 
-
-	<table style="width: 100%" border="1">
+	<table id="tablaMail" style="width: 100%" border="1">
 		<tr>
 			<th>REMITENTE</th>
 			<th>DESTINATARIO</th>

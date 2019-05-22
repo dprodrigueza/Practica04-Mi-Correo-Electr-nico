@@ -8,11 +8,12 @@
 
     <table style="width: 100%" border="1">
         <tr>
-            <th>REMITENTE</th>
-            <th>ASUNTO</th>
-            <th>MENSAJE</th>
-            <th>FECHA ENVIO</th>
-            <th colspan="3">ACCIONES</th>
+        <th>REMITENTE</th>
+			<th>DESTINATARIO</th>
+			<th>ASUNTO</th>
+			<th>MENSAJE</th>
+			<th>FECHA ENVIO</th>
+			<th colspan="2">ACCIONES</th> 
 
         </tr>
 
@@ -21,11 +22,10 @@
         
 
         $mail = $_GET['mail'];
-        $destina = $_GET['destin'];
 
         
 
-        $sql = "SELECT * from mensajes WHERE mens_remite LIKE '%$mail%' AND mens_remite != '$destina';";
+        $sql = "SELECT * from mensajes WHERE mens_remite LIKE '%$mail%';";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -35,7 +35,7 @@
                 echo "<tr>";
                 //echo ("<td>" . $row["mens_id"] . "</td>");
                 echo ("<td>" . $row["mens_remite"] . "</td>");
-                //echo ("<td>" . $row["mens_destin"] . "</td>");
+                echo ("<td>" . $row["mens_destin"] . "</td>");
                 echo ("<td>" . $row["mens_asunto"] . "</td>");
                 echo ("<td>" . $row["mens_mensaje"] . "</td>");
                 echo ("<td>" . $row["mens_fecEnv"] . "</td>");

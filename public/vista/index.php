@@ -32,12 +32,12 @@
     ?>
 
 
-    <form id="busqueda" method="POST" onsubmit="return buscarCorreo()">
+    <form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
         <label> Buscar </label>
         <input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un Remitente."> 
+        <input type="text" id="destinoMail" name="destinoMail"  value="<?php echo $_GET["mail"]; ?>"> 
         <span id="mensajeBusqueda" class="error"></span>
         <input type="submit" id="btnBuscar" name="btnBuscar" value="BUSCAR"> 
-        
     </form>
 
 
