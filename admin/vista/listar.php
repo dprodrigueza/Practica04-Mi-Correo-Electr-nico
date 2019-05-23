@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Listar datos de Usuarios.</title>
+    <link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
     ?>
 
 
-    <table style="width: 100%" border="1">
+    <table id="contenido" style="width: 100%" border="1">
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>

@@ -6,6 +6,8 @@
     <title>INDEX USER</title>
 
     <script type="text/javascript" src="../controladores/ajax.js"></script>
+    <link href="../css/estilo.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,10 +24,9 @@
 
     echo "<header>";
     echo "<a href= index.php?mail=$_GET[mail]> MENSAJES RECIBIDOS </a>";
-    echo "<a href= enviados.php?mail=$_GET[mail]>MENSAJES ENVIADOS</a>";
-    echo "<a href=actualizar.php?mail=$_GET[mail]>PERFIL</a>";
+    echo "<a href= enviados.php?mail=$_GET[mail]> MENSAJES ENVIADOS </a>";
+    echo "<a href=actualizar.php?mail=$_GET[mail]> PERFIL </a>";
     echo " <a  href=../../login/login.php> CERRAR SESION</a>";
-    echo "<br/>";
     echo "</header>";
 
     echo "<section>";
@@ -45,7 +46,7 @@
     </form>
 
 
-    <div id="tablaMails">
+    <div id="contenido">
         <table id="tablaMail" style="width: 100%" border="1">
             <tr>
                 <th>REMITENTE</th>

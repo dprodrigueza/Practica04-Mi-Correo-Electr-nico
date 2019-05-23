@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>INDEX ADMIN</title>
 	<script type="text/javascript" src="../controladores/ajax.js"></script>
+	<link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,11 +34,12 @@
 	<form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
 		<label> Buscar </label>
 		<input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un E-Mail.">
-		<input type="text" id="destinoMail" name="destinoMail" value="<?php echo $_GET["mail"]; ?>">
+		<input type="text" id="destinoMail" disabled	 name="destinoMail" value="<?php echo $_GET["mail"]; ?> ">
 		<span id="mensajeBusqueda" class="error"></span>
 	</form>
 
 
+	<section id="contenido">
 	<table id="tablaMail" style="width: 100%" border="1">
 		<tr>
 			<th>REMITENTE</th>
@@ -70,8 +72,8 @@
 				echo ("<td>" . $row["mens_asunto"] . "</td>");
 				echo ("<td>" . $row["mens_mensaje"] . "</td>");
 				echo ("<td>" . $row["mens_fecEnv"] . "</td>");
-				echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . ">ABRIR MENSAJE</a>" . " </td>");
-				echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . ">BORRAR MENSAJE</a>" . " </td>");
+				echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $_GET['mail'] .">ABRIR MENSAJE</a>" . " </td>");
+				echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $_GET['mail'] .  ">BORRAR MENSAJE</a>" . " </td>");
 				echo ("</tr>");
 			}
 		} else {
@@ -86,6 +88,7 @@
 		?>
 
 	</table>
+	</section>>
 
 	<footer>
 		<p>Diego Rodríguez A</p>

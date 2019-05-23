@@ -19,7 +19,7 @@ $cod++;
 
 
 
-$sql = "INSERT INTO usuarios VALUES ( $cod , '$email', '$contrasena', '$nombre', '$apellido', '$telefono', 'USER');";
+$sql = "INSERT INTO usuarios VALUES ( $cod , '$email', '$contrasena', '$nombre', '$apellido', '$telefono', 'USER', 'N');";
 $result = $conn->query($sql);
 
 

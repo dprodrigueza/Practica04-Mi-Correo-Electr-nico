@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#menuprincipal {
+    border: 1px black double;
+    width: 15%;
+    float: left;
+    background-color: black;
+    border-radius: 35px;
+    margin: 5px;
+    line-height: 45px
+}
+
+#contenido {
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    width: 100%;
+    float: left;
+    padding-bottom: 5px
+}
+
+footer {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#perfil {
+    height: 300px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header {
+    vertical-align: middle;
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite
+}
+
+a {
+    border: black 1px solid;
+}
+
+input {
+    border-radius: 5px;
+}
+
+#mensaje {
+    height: 100px;
+    width: 500px;
+    columns: 40;
+}
+
+#creacion {
+    height: 700px;
+    vertical-align: middle;
+    text-align: center;
+}

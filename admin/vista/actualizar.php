@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Perfil.</title>
+    <link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>

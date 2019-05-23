@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Perfil.</title>
     <script type="text/javascript" src="../controladores/funcion.js"></script>
+    <link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>

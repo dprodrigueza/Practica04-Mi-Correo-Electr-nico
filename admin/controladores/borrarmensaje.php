@@ -7,11 +7,13 @@ ECHO $sql;
 $result = $conn->query($sql);
 
 
+
 if ($conn->query($sql) === TRUE) {
     echo ("El MENSAJE A SIDO ELIMINADO.");
 }
 
-header("Location: ../vista/index.php");
+
+header("Location: ../vista/index.php?mail=$_GET[mail]");
 
 $conn->close();
 ?>

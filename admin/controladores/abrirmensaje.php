@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>MENS ADMIN</title>
+	<link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +57,6 @@
 				echo ("<td>" . $row["mens_fecEnv"] . "</td>");
 				echo ("</tr>");
 				echo "<tr >";
-				echo ("<th colspan=2> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . ">Borrar Mensaje</a>" . " </th>");
 				echo ("</tr>");
 			}
 		} else {
@@ -68,11 +68,12 @@
 
 
 		$conn->close();
+		echo "<a href=../vista/index.php?mail=$_GET[mail]>VOLVER</a>";
 		?>
 
 	</table>
 
-	<a href="../vista/index.php">VOLVER</a>
+	
 
 
 

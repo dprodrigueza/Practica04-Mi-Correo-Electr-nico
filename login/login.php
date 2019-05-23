@@ -6,7 +6,7 @@
     <title>Login</title>
 
     <script type="text/javascript" src="../controladores/funcion.js"></script>
-
+    <link href="../controladores/css/estilo.css" rel="stylesheet">
 
 </head>
 
@@ -17,7 +17,7 @@
     ?>
 
 
-    <form id="loginForm" method="POST" onsubmit="return validarCamposObligatoriosLogin()" action="../controladores/loginUser.php">
+    <form id="perfil" method="POST" onsubmit="return validarCamposObligatoriosLogin()" action="../controladores/loginUser.php">
         <h1>INGRESAR.</h1>
         <p>E-Mail (*): <input type="email" id="email" name="email" placeholder="Ingrese su email." onblur="validarMail(this)"></p>
         <span id="mensajeEmail" class="error"></span>
@@ -27,10 +27,12 @@
         <br />
 
         <button type="submit" id="btnLogin"> INGRESAR </button>
+        <br />
+        <br> ¿No tienes un usuario?<a class="creacion" href="crear.html">CREAR USUARIO</a>
+
     </form>
 
-    <br> ¿No tienes un usuario?<a class="creacion" href="crear.html">CREAR USUARIO</a>
-
+   
     <footer>
         <p>Diego Rodríguez A</p>
         <p>e-mail:<a href="mailto:drodrigueza@est.ups.edu.ec">drodrigueza@est.ups.edu.ec </a></p>

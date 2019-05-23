@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Perfil.</title>
     <script type="text/javascript" src="../controladores/funciones.js"></script>
+    <link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,20 +18,18 @@
 
     echo "<header>";
     echo "<a href= index.php?mail=$_GET[mail]> MENSAJES RECIBIDOS </a>";
-    echo "<a href= enviados.php?mail=$_GET[mail]>MENSAJES ENVIADOS</a>";
-    echo "<a href=actualizar.php?mail=$_GET[mail]>PERFIL</a>";
+    echo "<a href= enviados.php?mail=$_GET[mail]> MENSAJES ENVIADOS </a>";
+    echo "<a href=actualizar.php?mail=$_GET[mail]> PERFIL </a>";
     echo " <a  href=../../login/login.php> CERRAR SESION</a>";
-    echo "<br/>";
     echo "</header>";
 
     echo "<section>";
     echo "<a href=enviar.php?mail=$_GET[mail]>REDACTAR MENSAJE</a>";
     echo "</section>";
-    echo "<br/>";
 
 
     ?>
-    
+
     <?php
     include('../../config/conexionDB.php');
 

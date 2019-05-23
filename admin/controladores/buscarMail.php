@@ -12,19 +12,9 @@
         header("Location: ../../login/login.php");
     }
 
-    echo "<header>";
-    echo "<a href= ../controladores/crear.php?mail=$_GET[mail]> CREAR USUARIO ADMINISTRADOR </a>";
-    echo "<a href= ../vista/index.php?mail=$_GET[mail]> MENSAJES </a>";
-    echo "<a href=../controladores/listar.php?mail=$_GET[mail]> USUARIOS </a>";
-    echo " <a  href=../../login/login.php> CERRAR SESION </a>";
-    echo "<br/>";
-    echo "</header>";
 
-    echo "<section>";
-    echo "<a href=enviar.php?mail=$_GET[mail]> REDACTAR MENSAJE </a>";
-    echo "</section>";
     ?>
-    
+
     <table style="width: 100%" border="1">
         <tr>
             <th>REMITENTE</th>

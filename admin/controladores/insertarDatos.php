@@ -19,7 +19,7 @@ $cod++;
 
 
 
-$sql = "INSERT INTO usuarios VALUES ( $cod , '$email', '$contrasena', '$nombre', '$apellido', '$telefono', 'ADMIN');";
+$sql = "INSERT INTO usuarios VALUES ( $cod , '$email', '$contrasena', '$nombre', '$apellido', '$telefono', 'ADMIN', 'N');";
 $result = $conn->query($sql);
 
 
@@ -27,7 +27,7 @@ if ($conn->query($sql) === TRUE) {
     echo ("Hey! Bienvenido. Ahora ya puedes iniciar sesión con tu nueva cuenta. <br>");
 }
 
-header("Location: ../vista/index.php");
+header("Location: ../vista/listar.php?mail=$_GET[mail]");
 
 $conn->close();
 ?>
