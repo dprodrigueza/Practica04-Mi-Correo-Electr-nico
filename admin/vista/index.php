@@ -32,8 +32,8 @@
 
 
 	<form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
-		<label> Buscar </label>
-		<input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un E-Mail.">
+	<label> Buscar </label>
+        <input type="text" id="buscarR" name="buscarR" placeholder="@"> 
 		<input type="text" id="destinoMail" disabled	 name="destinoMail" value="<?php echo $_GET["mail"]; ?> ">
 		<span id="mensajeBusqueda" class="error"></span>
 	</form>

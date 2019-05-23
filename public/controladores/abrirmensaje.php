@@ -69,7 +69,6 @@
             echo ("<td>" . $fecEnv . "</td>");
             echo ("</tr>");
             echo "<tr >";
-            echo ("<th colspan=2> <a href = ../controladores/borrarmensaje.php?codigo= $codigo>Borrar Mensaje</a>" . " </th  >");
 			echo ("</tr>");
             
            

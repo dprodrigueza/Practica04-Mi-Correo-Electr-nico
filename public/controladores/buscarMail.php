@@ -25,7 +25,7 @@
 
         
 
-        $sql = "SELECT * from mensajes WHERE mens_remite LIKE '%$mail%' AND mens_remite != '$destina';";
+        $sql = "SELECT * from mensajes WHERE mens_remite LIKE '%$mail%' AND mens_remite != '$destina' and mens_destin = '$destina';";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -39,8 +39,8 @@
                 echo ("<td>" . $row["mens_asunto"] . "</td>");
                 echo ("<td>" . $row["mens_mensaje"] . "</td>");
                 echo ("<td>" . $row["mens_fecEnv"] . "</td>");
-                echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . ">ABRIR MENSAJE</a>" . " </td>");
-                echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . ">BORRAR MENSAJE</a>" . " </td>");
+                echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $destina . ">ABRIR MENSAJE</a>" . " </td>");
+                echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $destina . ">BORRAR MENSAJE</a>" . " </td>");
                 echo ("</tr>");
             }
         } else {

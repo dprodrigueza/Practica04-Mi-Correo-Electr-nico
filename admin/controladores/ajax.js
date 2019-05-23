@@ -1,8 +1,10 @@
 function buscarCorreo() {
     var referencia = document.getElementById("buscarR").value;
     var destino = document.getElementById("destinoMail").value;
-    if (referencia == "") {
-
+    //var destino = $_GET["mail"];;
+    var tablaNormal = document.getElementById("tablaMail");
+    if (referencia === "@") {
+        document.getElementById("buscarR").value = '@'
     } else {
         document.getElementById("tablaMail").innerHTML = "";
         if (window.XMLHttpRequest) {
@@ -15,7 +17,7 @@ function buscarCorreo() {
                 document.getElementById("tablaMail").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../controladores/buscarMail.php?mail=" + referencia, true);
+        xmlhttp.open("GET", "../controladores/buscarMail.php?mail=" + referencia + "&destin=" + destino, true);
         xmlhttp.send();
     }
     return false;
