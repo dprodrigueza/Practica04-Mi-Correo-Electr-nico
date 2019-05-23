@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E544F7E6-9059-E752-52A4-70825CA52696" name="USUARIOS">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:45:55 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="426E670C-695A-ADDD-8322-E0AFB92A53E2">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:05 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_email" id="2A587E71-C118-B0EF-C2C6-CF30BFAFDD6F">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:05 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_nombre" id="B6F16262-9AC2-B213-8BA4-6060718C0A4D">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:05 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_apellidp" id="7BCE684F-526B-CE64-F73A-E673887CD66B">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:06 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_telefono" id="95619AC7-9190-6D68-2080-9933642A3496">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:06 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_rol" id="14F23F7D-642B-25DB-0721-C126AF3372EC">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:48:58 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_del" id="44C397B9-2E78-549F-3137-F7699F162DEB">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-23 05:24:19 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="65BB74A3-9A38-FBE4-8872-8159C2523478" name="USUARIOS PK">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:46:36 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>426E670C-695A-ADDD-8322-E0AFB92A53E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

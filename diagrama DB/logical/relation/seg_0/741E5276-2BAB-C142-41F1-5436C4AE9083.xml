@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usuario Mensaje" directorySegmentName="seg_0" id="741E5276-2BAB-C142-41F1-5436C4AE9083">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:51:50 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<sourcePk>65BB74A3-9A38-FBE4-8872-8159C2523478</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>puede tener</nameOnSource>
+<nameOnTarget>debe tener</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E544F7E6-9059-E752-52A4-70825CA52696</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A48171A0-97AB-AD66-86CC-3F1EAA2CACF7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

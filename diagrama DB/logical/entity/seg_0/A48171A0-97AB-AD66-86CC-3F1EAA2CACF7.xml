@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A48171A0-97AB-AD66-86CC-3F1EAA2CACF7" name="MENSAJES">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:50:05 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mens_id" id="528E435E-82A6-AD0B-C4C4-1736F7E1E708">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:50:14 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mens_remite" id="BC209701-AF6E-71E4-0D69-F850C77F215C">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:59:24 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mens_destin" id="BA222DA5-3F26-8C43-C34B-9E884C04F29B">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:58:53 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mens_asunto" id="DC56664D-5E0A-C0A5-AFBB-E2815061C6BE">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:56:37 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mens_mensaje" id="ED793032-CACE-AA4E-0B13-589B3963C23F">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:50:14 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5000</dataTypeSize>
+<ownDataTypeParameters>5000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mens_fecEnv" id="5F352CB1-8103-8AA5-4E89-04FB3213736B">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:50:14 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="F6816161-78E9-3921-977B-A0EA58316F48">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:51:50 UTC</createdTime>
+<generatorID>741E5276-2BAB-C142-41F1-5436C4AE9083</generatorID>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<referedAttribute>426E670C-695A-ADDD-8322-E0AFB92A53E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8284EACB-9B31-6FB6-4866-278EC12F8190" name="MENSAJES PK">
+<createdBy>diego</createdBy>
+<createdTime>2019-05-08 19:50:29 UTC</createdTime>
+<ownerDesignName>diagrama DB</ownerDesignName>
+<engineerTo>
+<item key="69217D8F-4F62-D4EC-B460-D95AE3EB82D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>528E435E-82A6-AD0B-C4C4-1736F7E1E708</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
