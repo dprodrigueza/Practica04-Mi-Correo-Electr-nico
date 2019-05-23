@@ -79,8 +79,8 @@
                     echo ("<td>" . $row["mens_asunto"] . "</td>");
                     echo ("<td>" . $row["mens_mensaje"] . "</td>");
                     echo ("<td>" . $row["mens_fecEnv"] . "</td>");
-                    echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . ">ABRIR MENSAJE</a>" . " </td>");
-                    echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . ">BORRAR MENSAJE</a>" . " </td>");
+                    echo ("<td> <a href = ../controladores/abrirmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $_GET['mail'] . ">ABRIR MENSAJE</a>" . " </td>");
+                    echo ("<td> <a href = ../controladores/borrarmensaje.php?codigo=" . $row['mens_id'] . "&mail=" . $_GET['mail'] . ">BORRAR MENSAJE</a>" . " </td>");
                     echo ("</tr>");
                 }
             } else {

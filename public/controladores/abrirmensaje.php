@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>MENS USER</title>
+    <title>MENS USER</title>
+    
+    <link href="../css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
