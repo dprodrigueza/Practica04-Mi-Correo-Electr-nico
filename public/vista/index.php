@@ -23,21 +23,25 @@
     echo "<header>";
     echo "<a href= index.php?mail=$_GET[mail]> MENSAJES RECIBIDOS </a>";
     echo "<a href= enviados.php?mail=$_GET[mail]>MENSAJES ENVIADOS</a>";
+    echo "<a href=actualizar.php?mail=$_GET[mail]>PERFIL</a>";
     echo " <a  href=../../login/login.php> CERRAR SESION</a>";
+    echo "<br/>";
     echo "</header>";
 
     echo "<section>";
     echo "<a href=enviar.php?mail=$_GET[mail]>REDACTAR MENSAJE</a>";
     echo "</section>";
+
+    
     ?>
 
 
     <form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
         <label> Buscar </label>
         <input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un Remitente."> 
-        <input type="text" id="destinoMail" name="destinoMail"  value="<?php echo $_GET["mail"]; ?>"> 
+        <input type="text" id="destinoMail" name="destinoMail" disabled value="<?php echo $_GET["mail"]; ?>"> 
         <span id="mensajeBusqueda" class="error"></span>
-        <input type="submit" id="btnBuscar" name="btnBuscar" value="BUSCAR"> 
+
     </form>
 
 

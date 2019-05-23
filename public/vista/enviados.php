@@ -9,8 +9,6 @@
 <body>
 
 
-    <h1></h1>
-
     <?php
 
     session_start();
@@ -20,12 +18,17 @@
 
     echo "<header>";
     echo "<a href= index.php?mail=$_GET[mail]> MENSAJES RECIBIDOS </a>";
-    echo "<br/>";
     echo "<a href= enviados.php?mail=$_GET[mail]>MENSAJES ENVIADOS</a>";
-    echo "<br/>";
-    echo "<a href= ../../login/login.php>CERRAR SESION</a>";
+    echo "<a href=actualizar.php?mail=$_GET[mail]>PERFIL</a>";
+    echo " <a  href=../../login/login.php> CERRAR SESION</a>";
     echo "<br/>";
     echo "</header>";
+
+    echo "<section>";
+    echo "<a href=enviar.php?mail=$_GET[mail]>REDACTAR MENSAJE</a>";
+    echo "</section>";
+    echo "<br/>";
+
 
     ?>
 
@@ -77,12 +80,13 @@
         $conn->close();
         ?>
 
-        <footer>
-            <p>Diego Rodríguez A</p>
-            <p>e-mail:<a href="mailto:drodrigueza@est.ups.edu.ec">drodrigueza@est.ups.edu.ec </a></p>
-            <p>Teléfono:<a href="tel:+593984053639">0984053639</a></p>
-            <p>© Todos los derechos reservados</p>
-        </footer>
+    </table>
+    <footer>
+        <p>Diego Rodríguez A</p>
+        <p>e-mail:<a href="mailto:drodrigueza@est.ups.edu.ec">drodrigueza@est.ups.edu.ec </a></p>
+        <p>Teléfono:<a href="tel:+593984053639">0984053639</a></p>
+        <p>© Todos los derechos reservados</p>
+    </footer>
 
 
 </body>

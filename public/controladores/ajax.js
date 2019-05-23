@@ -1,8 +1,10 @@
 function buscarCorreo() {
     var referencia = document.getElementById("buscarR").value;
     var destino = document.getElementById("destinoMail").value;
-    if (referencia == "") {
-
+    //var destino = $_GET["mail"];;
+    var tablaNormal = document.getElementById("tablaMail");
+    if (referencia == "Ingrese un Remitente.") {
+        referencia = '@';
     } else {
         document.getElementById("tablaMail").innerHTML = "";
         if (window.XMLHttpRequest) {

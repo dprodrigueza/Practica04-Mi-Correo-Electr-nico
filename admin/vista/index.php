@@ -14,19 +14,20 @@
 	if (!isset($_SESSION['isLoggedAdmin']) || $_SESSION['isLoggedAdmin'] === FALSE) {
 		header("Location: ../../login/login.php");
 	}
+
+	echo "<header>";
+	echo "<a href= ../vista/crear.php?mail=$_GET[mail]> CREAR USUARIO ADMINISTRADOR </a>";
+	echo "<a href= ../vista/index.php?mail=$_GET[mail]> MENSAJES </a>";
+	echo "<a href=../vista/listar.php?mail=$_GET[mail]> USUARIOS </a>";
+	echo " <a  href=../../login/login.php> CERRAR SESION </a>";
+	echo "<br/>";
+	echo "</header>";
+
+
 	?>
 
-	<header>
-		<a href="actualizar.html">CREAR USUARIO ADMINISTRADOR</a>
-		<br>
-		<a href="crear.html">CREAR USUARIO ADMINISTRADOR</a>
-		<br>
-		<a href="eliminar.html">ELIMINAR DATOS</a>
-		<br>
-		<a href="Listar.html">LISTAR USUARIOS</a>
-		<br>
-		<a href="../../login/login.php">CERRAR SESION</a>
-	</header>
+
+
 
 
 	<form id="busqueda" method="POST" onkeyup="return buscarCorreo()">
@@ -34,7 +35,6 @@
 		<input type="text" id="buscarR" name="buscarR" placeholder="Ingrese un E-Mail.">
 		<input type="text" id="destinoMail" name="destinoMail" value="<?php echo $_GET["mail"]; ?>">
 		<span id="mensajeBusqueda" class="error"></span>
-		<input type="submit" id="btnBuscar" name="btnBuscar" value="BUSCAR">
 	</form>
 
 
